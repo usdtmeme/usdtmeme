@@ -8,14 +8,15 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+            background: radial-gradient(circle, #0d0d0d, #1a1a1a);
             color: white;
             text-align: center;
+            overflow-x: hidden;
         }
         header {
-            padding: 60px 20px;
-            background: linear-gradient(45deg, #32cd32, #ff4500, #ffd700);
-            color: white;
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #32cd32, #ff4500, #ffd700);
+            color: black;
         }
         header h1 {
             font-size: 3.5rem;
@@ -23,47 +24,50 @@
             text-transform: uppercase;
         }
         header p {
-            font-size: 1.8rem;
-            margin-top: 10px;
+            font-size: 1.5rem;
+            margin: 10px 0 0 0;
         }
         nav {
             display: flex;
             justify-content: center;
             gap: 30px;
-            margin: 30px 0;
+            margin-top: 20px;
         }
         nav a {
             text-decoration: none;
-            color: white;
-            font-size: 1.4rem;
-            padding: 12px 25px;
-            background: #1a1a1a;
-            border: 2px solid #ffd700;
+            color: black;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background: white;
             border-radius: 5px;
-            transition: 0.3s;
+            transition: 0.3s ease;
         }
         nav a:hover {
-            background-color: #ffd700;
+            background: #ffd700;
             color: black;
         }
+        .section {
+            padding: 100px 20px;
+        }
         .hero {
-            background: url('https://via.placeholder.com/1920x800?text=TO+THE+MOON!') no-repeat center center/cover;
-            padding: 120px 20px;
+            background: url('https://via.placeholder.com/1920x800?text=To+The+Moon!') no-repeat center center/cover;
+            padding: 150px 20px;
+            color: white;
         }
         .hero h2 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             max-width: 800px;
             margin: 0 auto;
             line-height: 1.8;
         }
         .cta {
             display: inline-block;
-            margin-top: 30px;
-            padding: 20px 40px;
+            margin-top: 20px;
+            padding: 15px 30px;
             font-size: 1.4rem;
             color: black;
             background: #ffd700;
@@ -74,96 +78,74 @@
         .cta:hover {
             background: #ffa500;
         }
-        .dollar-coins {
+        .images-row {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin: 50px 0;
+            gap: 20px;
+            margin: 40px 0;
         }
-        .dollar-coins img {
-            width: 220px;
-            height: 220px;
+        .images-row img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            transition: transform 0.3s;
-            border: 4px solid #ffd700;
+            border: 3px solid #ffd700;
+            transition: transform 0.3s ease;
         }
-        .dollar-coins img:hover {
+        .images-row img:hover {
             transform: scale(1.2);
         }
-        .gift-section {
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #ff4500, #32cd32);
-        }
-        .gift-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .gift-section p {
-            font-size: 1.3rem;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-        }
-        .gift-section img {
-            width: 150px;
-            margin: 10px;
-            border-radius: 15px;
-            transition: transform 0.3s;
-        }
-        .gift-section img:hover {
-            transform: scale(1.1);
-        }
         footer {
-            background: #1a1a1a;
-            padding: 30px;
+            background: #0d0d0d;
+            padding: 20px;
             margin-top: 50px;
-            border-top: 2px solid #ffd700;
+            color: #bdbdbd;
         }
         footer p {
             margin: 0;
-            font-size: 1.2rem;
-            color: #bdbdbd;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>USDT - Ultra Stable Trump Coin</h1>
-        <p>The Meme Coin That Shoots Straight to the Moon! 🚀</p>
+        <p>The Meme Coin Revolution 🚀</p>
         <nav>
             <a href="#about">About</a>
-            <a href="#opportunities">Moon Gifts</a>
-            <a href="#community">Join Us</a>
+            <a href="#moon-gifts">Moon Gifts</a>
+            <a href="#join-us">Join Us</a>
         </nav>
     </header>
 
     <section class="hero" id="about">
         <h2>About USDT</h2>
         <p>
-            USDT is not just another coin; it’s a ticket to the moon and beyond. With humor, 
-            stability, and endless possibilities, it's your chance to turn laughter into gold! 🌕
+            Welcome to USDT, where laughter meets stability! 🌕 Our coin is more than just a cryptocurrency; it’s a journey to the moon and beyond, packed with opportunities and humor.
         </p>
-        <a href="https://x.com/usdtmemecoin" target="_blank" class="cta">Get On Board</a>
+        <a href="https://x.com/usdtmemecoin" class="cta">Learn More</a>
     </section>
 
-    <section class="dollar-coins" id="opportunities">
-        <img src="https://via.placeholder.com/220x220?text=$1" alt="Dollar Coin 1">
-        <img src="https://via.placeholder.com/220x220?text=$2" alt="Dollar Coin 2">
-        <img src="https://via.placeholder.com/220x220?text=$3" alt="Dollar Coin 3">
-    </section>
-
-    <section class="gift-section">
-        <h2>Moon Gifts</h2>
+    <section class="section" id="moon-gifts">
+        <h2>Moon Gifts 🎁</h2>
         <p>
-            Join the USDT journey and claim your exclusive gifts! From memes to collectibles, 
-            we’ve got something for everyone. Don’t miss out on the moon mission! 🎁
+            Join the USDT revolution and claim your exclusive Moon Gifts! 🚀 From collectible tokens to hilarious memes, there's something for everyone. Don't miss your chance to ride the moon wave!
         </p>
-        <img src="https://via.placeholder.com/150?text=🎁" alt="Gift 1">
-        <img src="https://via.placeholder.com/150?text=🚀" alt="Gift 2">
-        <img src="https://via.placeholder.com/150?text=🌕" alt="Gift 3">
+        <div class="images-row">
+            <img src="https://via.placeholder.com/200x200?text=$1" alt="Dollar 1">
+            <img src="https://via.placeholder.com/200x200?text=$2" alt="Dollar 2">
+            <img src="https://via.placeholder.com/200x200?text=$3" alt="Dollar 3">
+        </div>
+    </section>
+
+    <section class="section" id="join-us">
+        <h2>Join the Community</h2>
+        <p>
+            Be part of the fastest-growing meme coin community. 🚀 Stay updated on the latest news and join the conversation. Together, we’ll reach the moon! 🌕
+        </p>
+        <a href="https://x.com/usdtmemecoin" class="cta">Follow Us on Twitter</a>
     </section>
 
     <footer>
-        <p>&copy; 2024 USDT Meme Coin. To the Moon! 🚀</p>
+        <p>&copy; 2024 USDT Meme Coin - To the Moon and Beyond! 🌕</p>
     </footer>
 </body>
 </html>
